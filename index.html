@@ -1,243 +1,157 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <title>Personal Detail Form</title>
 
-    <title>Josika Portfolio</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #fff5f5;
+        }
 
-  <style>
+        h1 {
+            color: #4a6fa5;
+            text-align: center;
+        }
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #fff7f5;
-        color: #334155;
-        margin: 40px;
-    }
+        form {
+            width: 600px;
+            margin: auto;
+            background-color: #fffdf5;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px #b8c6d9;
+        }
 
-    h1 {
-        color: #3b82f6;
-        font-size: 45px;
-    }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin: 10px;
+            color: #34495e;
+            font-weight: bold;
+        }
 
-    h2 {
-        color: #4f7fc4;
-        border-bottom: 2px solid #b9d7f5;
-        padding-bottom: 8px;
-    }
+        input, select, textarea {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #9bb7d4;
+            border-radius: 6px;
+        }
 
-    h3 {
-        color: #5b8dcc;
-    }
+        textarea {
+            width: 250px;
+            height: 70px;
+        }
 
-    .section {
-        background-color: #fffdfb;
-        padding: 25px;
-        margin-bottom: 20px;
+        input:focus, select:focus, textarea:focus {
+            border: 2px solid #6c8ebf;
+            outline: none;
+        }
 
-        border: 1px solid #f1d8d5;
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-        border-radius: 12px;
-    }
+        button {
+            padding: 10px 25px;
+            margin: 5px;
+            border: none;
+            border-radius: 6px;
+            background-color: #6c8ebf;
+            color: white;
+            cursor: pointer;
+        }
 
-    p {
-        line-height: 1.7;
-        color: #5b6470;
-    }
-
-    li {
-        margin: 10px 0;
-        color: #5b6470;
-    }
-
-    img {
-        width: 300px;
-
-        border-radius: 8px;
-
-        border: 2px solid #a9c9ed;
-    }
-
-    a {
-        color: #4f86c6;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #2f65a0;
-        text-decoration: underline;
-    }
-
-</style>0
-
+        button:hover {
+            background-color: #4a6fa5;
+        }
+    </style>
 </head>
-
 
 <body>
 
+    <h1>Student Form</h1>
 
-    <!-- NAME -->
+    <form>
 
-    <h1>Josika M</h1>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+        <br>
 
-    <p>B.Tech Information Technology Student</p>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+        <br>
 
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password">
+        <br>
 
-    <!-- ABOUT ME -->
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter phone number">
+        <br>
 
-    <div class="section">
+        <label>Parent Phone:</label>
+        <input type="tel" placeholder="Enter parent phone">
+        <br>
 
-        <h2>About Me</h2>
+        <label>DOB:</label>
+        <input type="date">
+        <br>
 
-        <p>
-            I am a B.Tech Information Technology student
-            interested in programming, web development,
-            artificial intelligence and emerging technologies.
-        </p>
+        <label>Address:</label>
+        <textarea placeholder="Enter your address"></textarea>
+        <br>
 
-    </div>
+        <label>Pincode:</label>
+        <input type="number" placeholder="Enter pincode">
+        <br>
 
+        <label>Year of Study:</label>
+        <select>
+            <option>Select Year</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+        <br>
 
-    <!-- SKILLS -->
+        <label>Courses:</label>
+        <input type="number" placeholder="Number of courses">
+        <br>
 
-    <div class="section">
+        <label>Bill Receipt:</label>
+        <input type="file">
+        <br>
 
-        <h2>Skills</h2>
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br>
 
-        <ul>
+        <label>Languages:</label>
+        <input type="checkbox"> Java
+        <input type="checkbox"> Python
+        <input type="checkbox"> C
+        <br>
 
-            <li>HTML</li>
+        <label>Department:</label>
+        <select>
+            <option>Select Department</option>
+            <option>IT</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+        </select>
+        <br>
 
-            <li>CSS</li>
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
 
-            <li>C</li>
-
-            <li>C++</li>
-
-            <li>Java</li>
-
-            <li>Python</li>
-
-        </ul>
-
-    </div>
-
-
-    <!-- PROJECTS -->
-
-    <div class="section">
-
-        <h2>Projects</h2>
-
-
-        <h3>AI-Powered Smart Energy Guardian</h3>
-
-        <p>
-            An energy monitoring project designed to help
-            MSMEs monitor electricity consumption and
-            improve energy efficiency.
-        </p>
-
-        <p>
-            <strong>Technologies:</strong>
-            IoT, ESP32, Firebase, Python, Flask
-        </p>
-
-
-        <h3>Campus Resource Booking System</h3>
-
-        <p>
-            A system designed to simplify the booking
-            and management of campus resources.
-        </p>
-
-        <p>
-            <strong>Technologies:</strong>
-            HTML, CSS, JavaScript
-        </p>
-
-    </div>
-
-
-    <!-- HACKATHONS -->
-
-    <div class="section">
-
-        <h2>Hackathons & Achievements</h2>
-
-        <h3>StartupTN HackFusion 2026</h3>
-
-        <p>
-            Participated in StartupTN HackFusion 2026
-            and showcased an innovative technology solution.
-        </p>
-
-        <p>
-            <strong>Achievement:</strong>
-            Grand Finale Shortlisted
-        </p>
-
-    </div>
-
-
-    <!-- EDUCATION -->
-
-    <div class="section">
-
-        <h2>Education</h2>
-
-        <h3>B.Tech Information Technology</h3>
-
-        <p>
-            Velalar College of Engineering and Technology
-        </p>
-
-        <p>
-            Erode, Tamil Nadu
-        </p>
-
-        <p>
-            Currently Pursuing
-        </p>
-
-    </div>
-
-
-    <!-- CONTACT -->
-
-    <div class="section">
-
-    <h2>Contact</h2>
-
-    <p>
-        Email:
-        <a href="mailto:josi64178@gmail.com">
-            josi64178@gmail.com
-        </a>
-    </p>
-
-
-    <p>
-        LinkedIn:
-        <a
-            href="https://www.linkedin.com/in/josika-muruganandam-8a3417380/"
-            target="_blank">
-            My LinkedIn
-        </a>
-    </p>
-
-
-    <p>
-        GitHub:
-        <a
-            href="https://github.com/Josika-IT"
-            target="_blank">
-            My GitHub
-        </a>
-    </p>
-
-</div>
-
+    </form>
 
 </body>
-
 </html>
